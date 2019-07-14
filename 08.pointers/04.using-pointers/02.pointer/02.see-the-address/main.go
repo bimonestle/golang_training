@@ -11,7 +11,8 @@ func zero(z *int) {
 
 func main() {
 	x := 5
-	fmt.Println(&x)
-	zero(&x)
-	fmt.Println(x) // x is 0
+	fmt.Println(x)  // x is 5
+	fmt.Println(&x) // memory address of 5
+	zero(&x)        // memory address of 5
+	fmt.Println(x)  // x is 0
 }

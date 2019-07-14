@@ -9,7 +9,7 @@ func main() {
 	fmt.Println(a)  // 43
 	fmt.Println(&a) // 0x...
 
-	var b = &a
+	var b *int = &a
 	fmt.Println(b) // 0x...
 
 	// the above code makes b a pointer to the memory address where an int is stored
